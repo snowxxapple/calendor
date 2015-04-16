@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>calendor</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="calendor.css">
+</head>
+<body>
+	<div id="div1">
+		<ul>
+			<li><h5>1月</h5></li>
+			<li><h5>2月</h5></li>
+			<li><h5>3月</h5></li>
+			<li><h5>4月</h5></li>
+			<li><h5>5月</h5></li>
+			<li><h5>6月</h5></li>
+			<li><h5>7月</h5></li>
+			<li><h5>8月</h5></li>
+			<li><h5>9月</h5></li>
+			<li><h5>10月</h5></li>
+			<li><h5>11月</h5></li>
+			<li><h5>12月</h5></li>
+		</ul>
+		<div id="div2"></div>
+
+	</div>
+	
+</body>
+<script type="text/javascript">
+	
+	
+	window.onload=function()
+	{
+		var arr=["嘟嘟嘟",
+		"sss",
+		"是否通过深入体会投入和身体好投入还是挺好听",
+		"收入过很快浪费机会都几点回家的风格",
+		"接啊uaiefjiaejfiefj",
+		"阿法司法法尔测验题乳头溢液",
+		"是的法国人币噢刘鸥ID还是",
+		"按个人一天如火如荼",
+		"支付的各色人以上同意",
+		"这个虽然同样会突然",
+		"政府官方统计与",
+		"阿斯顿看见啊阿芳的股份的哈哈舒服好多天好友推荐的体育与一家韩国拔山盖世都给人以的同一天任何人身体和一体化是否合法是否规范施工人和他结婚已经啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
+		];
+		var otxt=document.getElementById('div2');
+		var btn=document.getElementsByTagName('li');
+		for(i=0;i<btn.length;i++)
+		{
+			btn[i].index=i;
+
+			btn[i].onmouseover=function()
+			{
+
+				for(i=0;i<btn.length;i++)
+				{
+					btn[i].className="";
+					
+
+				}
+				this.className="active";
+				
+				otxt.innerHTML="<h2>"+(this.index+1)+"月"+"</h2>"+arr[this.index];
+
+						
+			}
+
+		}
+
+	}
+
+</script>
+</html>
